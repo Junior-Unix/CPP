@@ -10,7 +10,7 @@ int main(){
     GradeBook gradeBook2( "Construção do gradeBook2: ");
 
         cout
-            << "Primeiro texto: " << gradeBook1.getCourseName()
+            << "Primeiro texto: " << gradeBook1.getCourseName();
             << "Segundo texto: " << gradeBook2.getCourseName();
             << endl;
 
