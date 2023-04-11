@@ -13,7 +13,7 @@ void GradeBook::setCourseName( string name ){
 string GradeBook::getCourseName(){
     return courseName;
 }
-void GradeBook(){
+void GradeBook::displayMessage(){
     cout
         << "Welcome! " << getCourseName()
         << endl;
