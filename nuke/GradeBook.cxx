@@ -15,6 +15,6 @@ string GradeBook::getCourseName(){
 }
 void GradeBook::displayMessage(){
     cout
-        << "Welcome! " << getCourseName()
+        << "Welcome!" << getCourseName()
         << endl;
 }

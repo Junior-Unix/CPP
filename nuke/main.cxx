@@ -6,13 +6,14 @@ using std::endl;
 
 int main(){
 
-    GradeBook gradeBook1( " Construtor 1 " );
-    GradeBook gradeBook2( "  Construtor 2 ");
+    GradeBook gradeBook1( " Construção 1 " );
+    GradeBook gradeBook2( " Construção 2 " );
 
-        cout 
-            << " Texto 1: " << gradeBook1.getCourseName()
-            << " Texto 2: " << gradeBook2.getCourseName()
+        cout
+            << "gradeBook1 : " << gradeBook1.getCourseName()
+            << "gradeBook2 : " << gradeBook2.getCourseName()
             << endl;
+
 
     return 0;
 }
