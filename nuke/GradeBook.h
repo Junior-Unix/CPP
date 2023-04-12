@@ -1,13 +1,13 @@
 #include <string>
 using std::string;
 
-class GradeBook{
+class GradeBook {
 private:
-    string courseName;
+	string courseName;
 public:
-    GradeBook( string );
-    void setCourseName( string );
-    string getCourseName();
-    void displayMessage();
+	GradeBook(string);
+	void setCourseName(string);
+	string getCourseName();
+	void displayMessage();
 
 };

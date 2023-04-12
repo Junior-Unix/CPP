@@ -4,17 +4,17 @@ using std::endl;
 
 #include "GradeBook.h"
 
-GradeBook::GradeBook( string name ){
-    setCourseName( name );
+GradeBook::GradeBook(string name) {
+	setCourseName(name);
 }
-void GradeBook::setCourseName( string name ){
-    courseName = name;
+void GradeBook::setCourseName(string name) {
+	courseName = name;
 }
-string GradeBook::getCourseName(){
-    return courseName;
+string GradeBook::getCourseName() {
+	return courseName;
 }
-void GradeBook::displayMessage(){
-    cout
-        << "Welcome! " << getCourseName()
-        << endl;
+void GradeBook::displayMessage() {
+	cout
+		<< "Welcome!" << getCourseName()
+		<< endl;
 }
