@@ -10,8 +10,8 @@ int main() {
 	GradeBook gradeBook2("Segundo");
 
 	cout
-		<< "gradeBook1:" << gradeBook.getCourseName()
-		<< "gradeBook2:" << gradeBook.getCourseName()
+		<< "gradeBook1:" << gradeBook1.getCourseName()
+		<< "gradeBook2:" << gradeBook2.getCourseName()
 		<< endl;
 
 	return 0;
