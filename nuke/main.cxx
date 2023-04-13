@@ -4,14 +4,14 @@ using std::endl;
 
 #include "GradeBook.h"
 
-int main() {
 
-	GradeBook gradeBook1("Construção do gradeBook1");
-	GradeBook gradeBook2("Construção do gradeBook2");
+int main() {
+	GradeBook gradeBook1("Primeiro");
+	GradeBook gradeBook2("Segundo");
 
 	cout
-		<< "Primeira " << gradeBook1.getCourseName()
-		<< "Segunda " << gradeBook2.getCourseName()
+		<< "gradeBook1:" << gradeBook.getCourseName()
+		<< "gradeBook2:" << gradeBook.getCourseName()
 		<< endl;
 
 	return 0;

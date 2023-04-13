@@ -9,5 +9,4 @@ public:
 	void setCourseName(string);
 	string getCourseName();
 	void displayMessage();
-
 };
