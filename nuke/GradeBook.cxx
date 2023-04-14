@@ -14,8 +14,7 @@ void GradeBook::setCourseName(string name) {
 	if (name.length() > 25) {
 		courseName = name.substr(0, 25);
 		cout
-			<< "Name" << name
-			<< "Limite courseName to first 25 characters.\n"
+			<< name
 			<< endl;
 	}
 }
@@ -24,6 +23,6 @@ string GradeBook::getCourseName() {
 }
 void GradeBook::displayMessage() {
 	cout
-		<< "Welcome! " << getCourseName()
+		<< "Welcome!" << getCourseName()
 		<< endl;
 }
