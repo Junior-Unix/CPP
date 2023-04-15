@@ -6,7 +6,7 @@ private:
 	string courseName;
 public:
 	GradeBook(string);
-	void setGcourseName(string);
+	void setCourseName(string);
 	string getCourseName();
 	void displayMessage();
 };

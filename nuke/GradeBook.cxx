@@ -7,7 +7,7 @@ using std::endl;
 GradeBook::GradeBook(string name) {
 	setCourseName(name);
 }
-void GradeBook::setGcourseName(string name) {
+void GradeBook::setCourseName(string name) {
 	if (name.length() <= 25) {
 		courseName = name;
 	}
@@ -21,10 +21,10 @@ void GradeBook::setGcourseName(string name) {
 	}
 }
 string GradeBook::getCourseName() {
-	return coursename;
+	return courseName;
 }
 void GradeBook::displayMessage() {
 	cout
-		<< "Welcome to the grade book for\n" << getCOurseName() "!"
+		<< "Welcome to the grade book for\n" << getCourseName() << "!"
 		<< endl;
 }
