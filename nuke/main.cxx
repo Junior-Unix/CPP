@@ -4,13 +4,12 @@ using std::endl;
 
 #include "GradeBook.h"
 
+
 int main() {
 
-	GradeBook gradeBook1(" texto com mais de vinte e cinco caracteres.");
-	GradeBook gradeBook2("segunda");
+	GradeBook gradeBook1("teste de que a variaval name tem menos de 25 usando ternários");
 
-	cout << "Texto 1" << gradeBook1.getCourseName()
-		<< "Texto 2 " << gradeBook2.getCourseName()
+	cout << "Ternarios com menos de 25 characters." << gradeBook1.getCourseName()
 		<< endl;
 
 	return 0;
