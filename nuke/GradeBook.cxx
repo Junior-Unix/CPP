@@ -13,6 +13,11 @@ void GradeBook::setCourseName(string name) {
 			? courseName = name 
 			: courseName = name.substr(0, 25)
 			);
+	/*ou
+	name.length() <=25 
+	? cout << courseName = name 
+	: cout courseName = name.substr(0, 25);
+	*/
 
 	cout
 		<< "\nLimit to 25 characters. " << name
