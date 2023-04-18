@@ -1,4 +1,5 @@
 #include <string>
+using std::string;
 
 class GradeBook {
 private:
