@@ -4,13 +4,15 @@ using std::endl;
 
 #include "GradeBook.h"
 
-
 int main() {
 
-	GradeBook gradeBook1("teste de que a variaval name tem menos de 25 usando ternários");
+	GradeBook gradeBook1("Teste de truncagem da variavel name com mais de 25 characters.");
 
-	cout << "Ternarios com menos de 25 characters." << gradeBook1.getCourseName()
+
+	cout
+		<< "Truncagem: " << gradeBook1.getCourseName()
 		<< endl;
+
 
 	return 0;
 }
