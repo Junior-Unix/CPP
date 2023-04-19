@@ -34,14 +34,14 @@ void GradeBook::determineClassAverage() {
 
 	int total;
 	int grade;
-	ing gradeCounter;
+	int gradeCounter;
 	double average;
 
 	total = 0;
 	gradeCounter = 0;
 
 	cout
-		<< "Enter grade: ";
+		<< "Enter grade or -1 to quit: ";
 	cin
 		>> grade;
 
@@ -50,7 +50,7 @@ void GradeBook::determineClassAverage() {
 		gradeCounter = gradeCounter + 1;
 
 		cout
-			<< "Enter grade: ";
+			<< "Enter grade or -1 to quit: ";
 		cin
 			>> grade;
 	}
