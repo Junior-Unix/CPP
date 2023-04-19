@@ -7,5 +7,6 @@ int main() {
 	myGradeBook.displayMessage();
 	myGradeBook.determineClassAverage();
 
+
 	return 0;
 }
