@@ -15,9 +15,7 @@ void GradeBook::setCourseName(string name) {
 	else {
 		courseName = name.substr(0, 25);
 		cout
-			<< "Limitado a 25 caracteres."
-			<< name
-			<< endl;
+			<< "Limite de caracteres em 25 " << name << endl;
 	}
 }
 string GradeBook::getCourseName() {
@@ -31,8 +29,8 @@ void GradeBook::displayMessage() {
 void GradeBook::determineClassAverage() {
 
 	int total;
-	int gradeCounter;
 	int grade;
+	int gradeCounter;
 	int average;
 
 	total = 0;
@@ -43,15 +41,13 @@ void GradeBook::determineClassAverage() {
 			<< "Enter grade: ";
 		cin
 			>> grade;
-
 		total = total + grade;
 		gradeCounter = gradeCounter + 1;
 	}
-
 	average = total / 10;
 
 	cout
-		<< "\nTotal of all 10 grades is " << total << endl;
+		<< "Total of all 10 grades is: " << total << endl;
 	cout
-		<< "Class average is " << average << endl;
+		<< "Class average is: " << average << endl;
 }
