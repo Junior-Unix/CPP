@@ -65,7 +65,7 @@ void GradeBook::determineClassAverage(){
 			<< "\nTotal off all " << gradeCounter << " grades entries is "
 			<< total << endl;
 		cout
-			<< "Class average is " << setprecision( 2 ) << fixed << endl;
+			<< "Class average is " << setprecision( 2 ) << fixed << average << endl;
 	}
 	else
 		cout
