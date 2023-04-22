@@ -2,38 +2,39 @@
 using std::cout;
 using std::cin;
 using std::endl;
-using std::fixed; //Assegura que o ponto de fração decimal seja exibido.
+using std::fixed;
 
 #include <iomanip>
-using std::setprecision; //Configura a precisão da saída numérica.
+using std::setprecision;
 
 #include "GradeBook.h"
 
-GradeBook::GradeBook(string name){
+GradeBook::GradeBook(string name) {
 	setCourseName(name);
 }
-void GradeBook::setCourseName(string name){
-	if(name.length() <= 10){
+void GradeBook::setCourseName(string name) {
+	if (name.length() <= 25) {
 		courseName = name;
 	}
-	else{
+	else {
 		courseName = name.substr(0, 25);
 
 		cout
-			<< "Name " << name << " " << "exceeds maximum length (25).\n"
-			<< "Limit courseName to first 25 characters.\n" << endl;
+			<< "Name " << name << "exceeds maximum length (25).\n"
+			<< "Limiting courseName to first 25 characters.\n"
+			<< endl;
 	}
 }
-string GradeBook::getCourseName(){
+string GradeBook::getCourseName() {
 	return courseName;
 }
-void GradeBook::displayMessage(){
+void GradeBook::displayMessage() {
 	cout
-		<< "Welcome to the grade book for\n" << getCourseName() << "!\n"
+		<< "Welcome to the grade book for\n" << getCourseName() << "\n"
 		<< endl;
 }
-void GradeBook::determineClassAverage(){
-	
+void GradeBook::determineClassAverage() {
+
 	int total;
 	int grade;
 	int gradeCounter;
@@ -46,28 +47,29 @@ void GradeBook::determineClassAverage(){
 		<< "Enter grade or -1 to quit: ";
 	cin
 		>> grade;
+	while (grade != -1) {
 
-	while(grade != -1){
-		
 		total = total + grade;
 		gradeCounter = gradeCounter + 1;
 
 		cout
-			<< "Enter grade or -1 to quit: ";
+			<< "Enter grade or -1 to quit";
 		cin
-			>> grade;	
+			>> grade;
 	}
-	if(gradeCounter != 0){
-		average = static_cast< double >(total) / gradeCounter;
+
+	if (gradeCounter != 0) {
+		average = static_cast<double>(total) / gradeCounter;
 
 		cout
-			<< "Total of all " << gradeCounter << "grades entrie is: "
-			<< total << endl;
+			<< "Total of all " << gradeCounter << " grades entered is "
+			<< total
+			<< endl;
 		cout
-			<< "Class average is: " << setprecision(2) << fixed << average << endl;
+			<< "Class average is " << setprecision(2) << fixed << average
+			<< endl;
 	}
-	else{
+	else
 		cout
-			<< "No grades were entried" << endl;
-	}
+		<< "No grades were entered" << endl;
 }
