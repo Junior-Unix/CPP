@@ -1,7 +1,7 @@
 #include <string>
 using std::string;
 
-class GradeBo{
+class GradeBook{
 	private:
 		string courseName;
 	public:

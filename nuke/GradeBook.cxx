@@ -10,7 +10,7 @@ using std::setprecision; //Configura a precisão da saída numérica.
 #include "GradeBook.h"
 
 GradeBook::GradeBook(string name){
-	setCOurseName(name);
+	setCourseName(name);
 }
 void GradeBook::setCourseName(string name){
 	if(name.length() <= 10){
@@ -47,7 +47,7 @@ void GradeBook::determineClassAverage(){
 	cin
 		>> grade;
 
-	while(gradeCounter != -1){
+	while(grade != -1){
 		
 		total = total + grade;
 		gradeCounter = gradeCounter + 1;
