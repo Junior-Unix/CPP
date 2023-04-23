@@ -9,7 +9,7 @@ using std::setprecision;
 
 #include "GradeBook.h"
 
-GradeBook::GradeBook(string name) {
+GradeBook::GradeBook(string name){
 	setCourseName(name);
 }
 void GradeBook::setCourseName(string name) {
@@ -20,7 +20,7 @@ void GradeBook::setCourseName(string name) {
 		courseName = name.substr(0, 25);
 
 		cout
-			<< "Name " << name << "exceeds maximum length (25).\n"
+			<< "Name " << name << "exceeds maximun length (25).\n"
 			<< "Limiting courseName to first 25 characters.\n"
 			<< endl;
 	}
@@ -30,7 +30,7 @@ string GradeBook::getCourseName() {
 }
 void GradeBook::displayMessage() {
 	cout
-		<< "Welcome to the grade book for\n" << getCourseName() << "\n"
+		<< "Welcome to the grade book for\n" << getCourseName()
 		<< endl;
 }
 void GradeBook::determineClassAverage() {
@@ -44,32 +44,34 @@ void GradeBook::determineClassAverage() {
 	gradeCounter = 0;
 
 	cout
-		<< "Enter grade or -1 to quit: ";
+		<< "Enter grade or -1 to quit!";
 	cin
 		>> grade;
-	while (grade != -1) {
 
+	while (grade != -1) {
 		total = total + grade;
 		gradeCounter = gradeCounter + 1;
 
 		cout
-			<< "Enter grade or -1 to quit";
+			<< "Enter grade or -1 to quit!";
 		cin
 			>> grade;
 	}
 
-	if (gradeCounter != 0) {
+	if(gradeCounter != 0) {
 		average = static_cast<double>(total) / gradeCounter;
 
 		cout
-			<< "Total of all " << gradeCounter << " grades entered is "
-			<< total
-			<< endl;
+			<< "\nTotal of all " << gradeCounter << " grades entered is "
+			<< total << endl;
 		cout
 			<< "Class average is " << setprecision(2) << fixed << average
 			<< endl;
 	}
-	else
+	else {
 		cout
-		<< "No grades were entered" << endl;
+			<< "No grades were entered"
+			<< endl;
+	}
+
 }
