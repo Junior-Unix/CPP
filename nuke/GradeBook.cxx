@@ -59,7 +59,7 @@ void GradeBook::determineClassAverage() {
 	}
 
 	if(gradeCounter != 0) {
-		average = static_cast<double>(total) / gradeCounter;
+		average = static_cast< double >( total ) / gradeCounter;
 
 		cout
 			<< "\nTotal of all " << gradeCounter << " grades entered is "
