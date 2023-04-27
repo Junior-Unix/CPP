@@ -3,7 +3,7 @@ using std::string;
 
 class GradeBook {
 private:
-	string courseName();
+	string courseName;
 public:
 	GradeBook(string);
 	void setCourseName(string);
