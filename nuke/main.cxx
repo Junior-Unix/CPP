@@ -1,12 +1,12 @@
-#include "GradeBook.h"
+#include "Power.h"
 
 int main(){
-	
-	GradeBook myGradeBook("CS101 C++ Programing!");
 
-	myGradeBook.displayMessage();
-	myGradeBook.determineClassAverage();
 
-	return 0;
+	Power myPower();
+
+	myPower.power();
+
+	return  0;
 
 }
