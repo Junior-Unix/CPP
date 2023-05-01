@@ -91,6 +91,8 @@ void GradeBook::inputGrades() {
 		case 'A':
 		case 'a':
 			aCount++;
+			cout
+				<< aCount << endl;
 			break;
 		case 'B':
 		case 'b':
