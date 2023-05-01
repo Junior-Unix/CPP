@@ -9,7 +9,7 @@ public:
 	void displayMessage();
 	void determineClassAverage();
 	void inputGrades();
-	void displayGradeReports();
+	void displayGradeReport();
 private:
 	string courseName;
 	int aCount;
