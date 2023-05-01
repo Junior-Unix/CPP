@@ -1,7 +1,15 @@
 #include <string>
 using std::string;
 
-class GradeBook{
+class GradeBook {
+public:
+	GradeBook(string);
+	void setCourseName(string);
+	string getCourseName();
+	void displayMessage();
+	void determineClassAverage();
+	void inputGrades();
+	void displayGradeReports();
 private:
 	string courseName;
 	int aCount;
@@ -10,12 +18,4 @@ private:
 	int dCount;
 	int eCount;
 	int fCount;
-public:
-	GradeBook(string);
-	void setCourseName(string);
-	string getCourseName();
-	void displayMessage();
-	void determineClassAverage();
-	void inputGrades();
-	void displayGradeReport();
 };
