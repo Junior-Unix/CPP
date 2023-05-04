@@ -80,8 +80,7 @@ void GradeBook::inputGrades(){
 	int grade;
 
 	cout
-		<< "Enter the letter grades." 
-		<< endl
+		<< "Enter the letter grades." << endl
 		<< "Enter the EOF character to end input."
 		<< endl;
 
