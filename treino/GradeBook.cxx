@@ -59,11 +59,11 @@ int GradeBook::getMaximum(){
     return highGrade;
 }
 
-void GradeBook::getAverage(){
+double GradeBook::getAverage(){
     int total{0};
 
     for (int grade{0}; grade < students; grade++){
         total += grades[grade];
     }
-    cout << static_cast<double>(total) / students;
+    return static_cast<double>(total) / students;
 }

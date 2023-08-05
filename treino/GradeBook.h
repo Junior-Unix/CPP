@@ -13,7 +13,7 @@ public:
     void outputGrades();
     int getMinimum();
     int getMaximum();
-    void getAverage();
+    double getAverage();
 
 private:
 
