@@ -15,6 +15,7 @@ public:
     int getMaximum();
     double getAverage();
     void processGrades();
+    void outputBarChart();
 
 private:
 

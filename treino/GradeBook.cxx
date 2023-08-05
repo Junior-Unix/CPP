@@ -75,4 +75,30 @@ void GradeBook::processGrades(){
     cout << "\nClass average is " << setprecision(2) << fixed << getAverage() << endl;
 
     cout << "Lowest grade is " << getMinimum() << "\nHighest grade is " << getMaximum() << endl;
+
+    outputBarChart();
+}
+
+void GradeBook::outputBarChart(){
+    const int frequencySize{11};
+    int frequency[frequencySize]{0};
+
+    for(int grade = 0; grade < students; grade++){
+        frequency[grades[grade] / students]++;
+    }
+
+    for(int count = 0; count < frequencySize; count++){
+        if(count == 0)
+            cout << "  0-9: ";
+        else if (count == 10)
+            cout << "  100: ";
+        else
+            cout << count * 10 << "-" << (count * 10 ) + 9 << ": ";
+        
+    for(int stars = 0; stars < frequency[count]; stars++)
+        cout << '*';
+    
+
+    cout << endl;
+    }
 }
