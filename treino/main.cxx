@@ -4,5 +4,6 @@ int main(){
 
     GradeBook myGradeBook("CS101 Introduction to C++ PRograming");
 
+    myGradeBook.displayMessage();
     return 0;
 }
