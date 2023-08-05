@@ -7,8 +7,8 @@ public:
     const static int students{10};
 
     GradeBook(string);
-    void setGradeBook(string);
-    string getGradeBook();
+    void setCourseName(string);
+    string getCourseName();
     void displayMessage();
 
 private:

@@ -2,5 +2,7 @@
 
 int main(){
 
-    GradeBook myGradeBook("CS101 Introduction to C++ PRograming")
+    GradeBook myGradeBook("CS101 Introduction to C++ PRograming");
+
+    return 0;
 }
