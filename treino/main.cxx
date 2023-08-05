@@ -8,6 +8,7 @@ int main(){
 
     myGradeBook.displayMessage();
     myGradeBook.outputGrades();
+    myGradeBook.getAverage();
 
     return 0;
 }

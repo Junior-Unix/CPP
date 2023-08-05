@@ -42,8 +42,8 @@ void GradeBook::outputGrades(){
 int GradeBook::getMinimum(){
     int lowGrade{100};
 
-    for( int grade = 0; grade < students; grade++){
-        if( grades[grade] < lowGrade)
+    for(int grade = 0; grade < students; grade++){
+        if(grades[grade] < lowGrade)
             lowGrade = grades[grade];
     }
     return lowGrade;
@@ -53,8 +53,17 @@ int GradeBook::getMaximum(){
     int highGrade{0};
 
     for ( int grade = 0; grade < students; grade++){
-        if( grades[grade] > highGrade)
+        if(grades[grade] > highGrade)
             highGrade = grades[grade];
     }
     return highGrade;
+}
+
+void GradeBook::getAverage(){
+    int total{0};
+
+    for (int grade{0}; grade < students; grade++){
+        total += grades[grade];
+    }
+    cout << static_cast<double>(total) / students;
 }
