@@ -7,8 +7,8 @@ int main(){
     GradeBook myGradeBook("CS101 Introduction to C++ Programing", gradesArray);
 
     myGradeBook.displayMessage();
-    myGradeBook.outputGrades();
-    myGradeBook.getAverage();
+    myGradeBook.processGrades();
+
 
     return 0;
 }

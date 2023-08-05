@@ -67,3 +67,12 @@ double GradeBook::getAverage(){
     }
     return static_cast<double>(total) / students;
 }
+
+void GradeBook::processGrades(){
+
+    outputGrades();
+
+    cout << "\nClass average is " << setprecision(2) << fixed << getAverage() << endl;
+
+    cout << "Lowest grade is " << getMinimum() << "\nHighest grade is " << getMaximum() << endl;
+}

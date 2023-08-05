@@ -14,6 +14,7 @@ public:
     int getMinimum();
     int getMaximum();
     double getAverage();
+    void processGrades();
 
 private:
 
