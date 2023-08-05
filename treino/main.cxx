@@ -8,6 +8,6 @@ int main(){
 
     myGradeBook.displayMessage();
     myGradeBook.outputGrades();
-    myGradeBook.getMaximum();
+
     return 0;
 }
