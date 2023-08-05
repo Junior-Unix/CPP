@@ -10,8 +10,13 @@ using std::setw;
 
 #include "GradeBook.h"
 
-GradeBook::GradeBook(string name){
+GradeBook::GradeBook(string name, const int gradesArray[]){
     setCourseName(name);
+
+    for( int grade = 0; grade < students; grade++){
+        grades[grade] = gradesArray[grade];
+    }
+    
 }
 
 void GradeBook::setCourseName( string name){
@@ -24,4 +29,12 @@ string GradeBook::getCourseName(){
 
 void GradeBook::displayMessage(){
     cout << "Welcome to the grade book for \n" << getCourseName() << "!" << endl;
+}
+
+void GradeBook::outputGrades(){
+    cout << "\nThe grades are:\n\n";
+    
+    for ( int student = 0; student < students; student++){
+        cout << "Student " << setw(2) << student + 1 << ": " << setw(3) << grades[student] << endl; 
+    }
 }
