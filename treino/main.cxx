@@ -8,5 +8,6 @@ int main(){
 
     myGradeBook.displayMessage();
     myGradeBook.outputGrades();
+    myGradeBook.getMinimum();
     return 0;
 }

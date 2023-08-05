@@ -38,3 +38,13 @@ void GradeBook::outputGrades(){
         cout << "Student " << setw(2) << student + 1 << ": " << setw(3) << grades[student] << endl; 
     }
 }
+
+void GradeBook::getMinimum(){
+    int lowGrade{100};
+
+    for( int grade = 0; grade < students; grade++){
+        if( grades[grade] < lowGrade)
+            lowGrade = grades[grade];
+    }
+    cout << lowGrade;
+}

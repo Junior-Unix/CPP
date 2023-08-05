@@ -11,6 +11,7 @@ public:
     string getCourseName();
     void displayMessage();
     void outputGrades();
+    void getMinimum();
 
 private:
 
