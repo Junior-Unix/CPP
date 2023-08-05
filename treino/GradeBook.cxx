@@ -48,3 +48,13 @@ int GradeBook::getMinimum(){
     }
     return lowGrade;
 }
+
+void GradeBook::getMaximum(){
+    int highGrade{0};
+
+    for ( int grade = 0; grade < students; grade++){
+        if( grades[grade] > highGrade)
+            highGrade = grades[grade];
+    }
+    cout << highGrade;
+}

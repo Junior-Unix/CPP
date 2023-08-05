@@ -12,6 +12,7 @@ public:
     void displayMessage();
     void outputGrades();
     int getMinimum();
+    void getMaximum();
 
 private:
 
